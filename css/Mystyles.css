@@ -1,0 +1,218 @@
+/* =============================================
+   style.css — Ireland, Spain & Italy Travel Page
+   ============================================= */
+
+/* --- CSS Variables (like a color palette you define once) --- */
+:root {
+  --color-bg: #f0f4f8;
+  --color-header-bg: #1a3c4d;
+  --color-accent: #2e7d9e;
+  --color-accent-light: #5ba3c0;
+  --color-green: #3a7d5e;
+  --color-text: #2c3e50;
+  --color-text-light: #5a6a78;
+  --color-white: #ffffff;
+  --color-card-bg: #ffffff;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Lato', 'Helvetica Neue', sans-serif;
+}
+
+/* --- Base Reset: remove default browser spacing/styling --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style 1: Body — font family + background color */
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+/* Style 2: Header — font color + font family for titles */
+header {
+  background-color: var(--color-header-bg);
+  color: var(--color-white);
+  text-align: center;
+  padding: 60px 20px 40px;
+  background-image: linear-gradient(135deg, #1a3c4d 0%, #2e7d9e 100%);
+}
+
+header h1 {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+header p.subtitle {
+  font-size: 1.1rem;
+  color: #b8d8e8;
+  font-style: italic;
+}
+
+/* Style 3: Navigation bar */
+nav {
+  background-color: #15303e;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 14px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: #b8d8e8;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--color-white);
+}
+
+/* --- DIV 1: Main content wrapper — centers and limits width --- */
+div.main-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Style 4: Section headings — font color + font family */
+h2.section-title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--color-header-bg);
+  border-bottom: 3px solid var(--color-accent);
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+  margin-top: 50px;
+}
+
+/* Style 5: Intro paragraph text */
+p.intro {
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+  margin-bottom: 20px;
+  max-width: 700px;
+}
+
+/* --- DIV 2: Country cards row — side-by-side layout --- */
+div.country-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+div.country-card {
+  background-color: var(--color-card-bg);
+  border-radius: 10px;
+  padding: 24px;
+  flex: 1;
+  min-width: 220px;
+  border-top: 4px solid var(--color-accent);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+div.country-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--color-green);
+  margin-bottom: 10px;
+}
+
+/* Style 6: Lists inside cards */
+div.country-card ol {
+  padding-left: 18px;
+  color: var(--color-text);
+}
+
+div.country-card ul {
+  padding-left: 22px;
+  color: var(--color-text-light);
+  font-size: 0.92rem;
+  margin-top: 6px;
+}
+
+/* --- DIV 3: Media section (images + video) --- */
+div.media-section {
+  background-color: var(--color-card-bg);
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+div.media-section img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 20px;
+  border: 3px solid var(--color-accent-light);
+}
+
+/* Style 7: Video embed wrapper — responsive */
+div.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+div.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Tableau placeholder box */
+div.tableau-placeholder {
+  background-color: #e8f4f8;
+  border: 2px dashed var(--color-accent);
+  border-radius: 8px;
+  padding: 50px 20px;
+  text-align: center;
+  color: var(--color-text-light);
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+/* Style 8: Footer */
+footer {
+  background-color: var(--color-header-bg);
+  color: #b8d8e8;
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9rem;
+  margin-top: 60px;
+}
+
+footer a {
+  color: #5ba3c0;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Anchor target offset so sticky nav doesn't cover the section */
+section {
+  scroll-margin-top: 60px;
+}

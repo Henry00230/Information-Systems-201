@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Summer in Europe | Ireland, Spain & Italy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/Mystyles.css">
+</head>
+
+<body>
+
+  <!-- ═══════════════ HEADER ═══════════════ -->
+  <header>
+    <p class="eyebrow">Summer 2025 Travel Journal</p>
+    <h1>Three Countries,<br>One Summer</h1>
+    <p class="flags">🇮🇪 🇪🇸 🇮🇹</p>
+  </header>
+
+  <!-- ═══════════════ NAV BAR ═══════════════ -->
+  <!-- These are on-page anchors — clicking jumps to that section on the same page -->
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#highlights">Highlights</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#video">Video</a>
+    <a href="#data">Data</a>
+    <!-- Update these to match your actual file names -->
+    <a href="index.html">Home</a>
+    <a href="webapp.html">Web App</a>
+  </nav>
+
+  <!-- ═══════════════ DIV 1: MAIN WRAPPER ═══════════════ -->
+  <div class="main-wrapper">
+
+    <!-- SECTION: OVERVIEW — id= is the anchor the nav link jumps to -->
+    <section id="overview">
+      <h2 class="section-title">The Trip</h2>
+      <div class="section-rule"></div>
+      <p class="intro">
+        This summer I will travel through three of Europe's most iconic countries.
+        Ireland's green cliffs and cozy pubs, Spain's sun-soaked plazas and late-night energy,
+        and Italy's ancient ruins and unforgettable food — each one completely different,
+        all of them unforgettable.
+      </p>
+    </section>
+
+    <!-- SECTION: HIGHLIGHTS -->
+    <section id="highlights">
+      <h2 class="section-title">Country Highlights</h2>
+      <div class="section-rule"></div>
+
+      <!-- DIV 2: flex row — cards sit side by side on wide screens, stack on mobile -->
+      <div class="country-cards">
+
+        <!-- IRELAND -->
+        <div class="country-card">
+          <h3>Ireland</h3>
+          <span class="flag-label">🇮🇪 Dublin · Galway · Kerry</span>
+          <!--
+            ASSIGNMENT REQUIREMENT: Ordered list with unordered list nested inside.
+            Ordered = numbered (ol). Unordered = bullets (ul). One is inside the other.
+          -->
+          <ol>
+            <li>Dublin
+              <ul>
+                <li>Trinity College &amp; Book of Kells</li>
+                <li>Temple Bar district</li>
+                <li>Guinness Storehouse</li>
+              </ul>
+            </li>
+            <li>Galway
+              <ul>
+                <li>Cliffs of Moher day trip</li>
+                <li>Latin Quarter pubs</li>
+              </ul>
+            </li>
+            <li>Ring of Kerry
+              <ul>
+                <li>Scenic coastal drive</li>
+                <li>Killarney National Park</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+
+        <!-- SPAIN -->
+        <div class="country-card">
+          <h3>Spain</h3>
+          <span class="flag-label">🇪🇸 Barcelona · Madrid · Seville</span>
+          <ol>
+            <li>Barcelona
+              <ul>
+                <li>Sagrada Família</li>
+                <li>Park Güell</li>
+                <li>Las Ramblas</li>
+              </ul>
+            </li>
+            <li>Madrid
+              <ul>
+                <li>Prado Museum</li>
+                <li>Retiro Park</li>
+              </ul>
+            </li>
+            <li>Seville
+              <ul>
+                <li>Real Alcázar palace</li>
+                <li>Flamenco show</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+
+        <!-- ITALY -->
+        <div class="country-card">
+          <h3>Italy</h3>
+          <span class="flag-label">🇮🇹 Rome · Florence · Cinque Terre</span>
+          <ol>
+            <li>Rome
+              <ul>
+                <li>Colosseum &amp; Roman Forum</li>
+                <li>Vatican &amp; Sistine Chapel</li>
+                <li>Trevi Fountain</li>
+              </ul>
+            </li>
+            <li>Florence
+              <ul>
+                <li>Uffizi Gallery</li>
+                <li>Ponte Vecchio</li>
+              </ul>
+            </li>
+            <li>Cinque Terre
+              <ul>
+                <li>Cliff-side hiking trails</li>
+                <li>Fresh seafood on the coast</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+
+      </div><!-- end .country-cards -->
+    </section>
+
+    <!-- SECTION: GALLERY -->
+    <section id="gallery">
+      <h2 class="section-title">Gallery</h2>
+      <div class="section-rule"></div>
+
+      <!-- DIV 3: media section — image and video grouped together -->
+      <div class="media-section">
+
+        <!--
+          REQUIREMENT: Image not from Bootstrap theme.
+          TO SWAP: save your own photo in the same folder, then change src="yourphoto.jpg"
+        -->
+        <img src="assets/img/Malin Head.jpg" alt="Malin Head">
+        <p class="img">Malin Head, Ireland</p>
+
+        <div class="media-inner">
+          <!--
+            id="video" = on-page anchor for the nav link above
+          -->
+          <h3 id="video">Europe Travel Highlights</h3>
+
+          <!--
+            REQUIREMENT: Embedded YouTube video.
+            HOW: Find any YouTube video → copy the ID from the URL after "?v="
+            Replace "sLuNNPiKMdU" below with that ID.
+            Note: won't load locally — works after uploading to GitHub.
+          -->
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/VRdhhUSC5A4"
+              title="Europe Travel Highlights"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div><!-- end .media-section -->
+    </section>
+
+    <!-- SECTION: TABLEAU -->
+    <section id="data">
+      <h2 class="section-title">Travel Data</h2>
+      <div class="section-rule"></div>
+
+      
+
+      <!--
+        TABLEAU PLACEHOLDER — replace this div's contents with your Tableau embed code.
+        On Tableau Public: open any viz → Share → Embed Code → paste the <script> tag here.
+      -->
+      <div class="tableau-box">
+        <strong style="font-size:1.1rem; display:block;">📊 Tableau Visualization</strong>
+        <div class='tableauPlaceholder' id='viz1776488071025' style='position: relative'><noscript><a href='#'><img alt='Blog Post Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bl&#47;BlogPost-Travel&#47;BlogPostDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BlogPost-Travel&#47;BlogPostDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bl&#47;BlogPost-Travel&#47;BlogPostDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1776488071025');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='800px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1400px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>.
+      </div>
+    </section>
+
+  </div><!-- end .main-wrapper -->
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer>
+    <p>Summer 2025 Europe Travel Journal</p>
+    <p style="margin-top: 8px;"><a href="index.html">← Back to Main Site</a></p>
+  </footer>
+
+</body>
+</html>
